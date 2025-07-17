@@ -6,7 +6,6 @@ import gift.exception.itemException.ItemPriceException;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "items") // 테이블명이 items인 경우 명시

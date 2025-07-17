@@ -33,6 +33,7 @@ public class ItemController {
 
         return new ResponseEntity<>(new ResponseItems(List.of(responseDto)), HttpStatus.CREATED);
     }
+
     @GetMapping
     public ResponseEntity<ResponseItems> getItems(@RequestParam(required = false) String name, @RequestParam(required = false) Integer price) {
         List<Item> items = itemService.getItems(name, price);

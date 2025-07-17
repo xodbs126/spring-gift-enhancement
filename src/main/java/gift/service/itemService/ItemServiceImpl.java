@@ -58,7 +58,7 @@ public class ItemServiceImpl implements ItemService {
         Integer price = dto.price();
         String imageUrl = dto.imageUrl();
 
-        item.update(name,price,imageUrl);
+        item.update(name, price, imageUrl);
 
         return item;
     }

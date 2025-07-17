@@ -73,7 +73,7 @@ public class WishListServiceImpl implements WishListService {
         List<WishItem> result = new ArrayList<>();
         for (WishItem wishItem : wishItems) {
             Item item = wishItem.getItem();
-            if (item.isValid(name,price)) {
+            if (item.isValid(name, price)) {
                 result.add(wishItem);
             }
         }
